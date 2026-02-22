@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ramadan-green: #064e3b;
+  --color-ramadan-gold: #fbbf24;
+  --color-ramadan-light: #fefce8;
+  --font-arabic: "Tajawal", "system-ui", "sans-serif";
+  --font-game: "Baloo Bhaijaan 2", "cursive";
+}
+
+@layer base {
+  body {
+    @apply bg-ramadan-green text-ramadan-light font-arabic;
+    direction: rtl;
+  }
+}
+
+.islamic-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.878 18.09h19.022l-15.388 11.18 5.878 18.09-15.39-11.18-15.388 11.18 5.878-18.09-15.388-11.18h19.022L30 0z' fill='%23fbbf24' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
